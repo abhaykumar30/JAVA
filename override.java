@@ -1,3 +1,5 @@
+import Threads.A;
+import Threads.B;
 
 class A{
     A(){

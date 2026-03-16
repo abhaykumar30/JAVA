@@ -17,12 +17,12 @@ public class Bubble {
     // bubble sort is the simplest sorting algorithm that works by repeatedly
     // swapping the adjacent elements if they are in wrong order.
     public static void Sort(int a[]) {
-        for (int i = 0; i < a.length - 1; i++) {
-            for (int j = 1; j < a.length; j++) {
-                if (a[j] < a[j - 1]) {
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a.length - i - 1; j++) {
+                if (a[j] > a[j + 1]) {
                     int temp = a[j];
-                    a[j] = a[j - 1];
-                    a[j - 1] = temp;
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
                 }
             }
         }
